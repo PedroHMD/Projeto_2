@@ -1,0 +1,164 @@
+*{
+    text-decoration: none;
+    font-size: 14px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    background-color: rgb(243,243,243);
+    display: flex;
+    justify-content: center;
+}
+
+.insta{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    height: 100vh;
+}
+
+.insta-phone{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.insta-phone img{
+    height: 60rem;
+}
+
+.insta-contlog{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    min-height: 34rem;
+}
+
+.insta-fotop img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.insta-grupo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    border: 1px solid lightgray;
+    padding: 1.3rem 0;
+    width: 100%;
+    margin-left: 100px;
+    margin-top: 30px;
+    
+}
+
+.insta-grupo::nth-child(1){
+    min-height: 19rem;
+
+}
+.continue-login{
+    background-color: rgb(8, 106, 197);
+    font-size: 20px;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+.trocar-conta{
+    font-size: 20px;
+    color: rgb(8,106,197);
+    margin-top: 20px;
+    font-family: Segoe UI;
+
+}
+.insta-logo{
+    height: 3rem;
+}
+
+.not-account{
+    color: rgb(160, 160,160);
+    font-size: 15px;
+}
+.not-account span{
+    font-size: 15px;
+}
+.link-blue{
+    color: rgb(8,106,197);
+}
+
+.insta-downloads{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.3rem 0;
+    margin-left: 100px;
+}
+
+.download-area{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+
+}
+
+.down{
+    height: 3rem;
+    width: 10rem;
+    background-size: cover;
+}
+
+.down:nth-child(1){
+    background-image: url('/img/apple-button.png');
+}
+
+.down:nth-child(2){
+    background-image: url('/img/googleplay-button.png');
+}
+
+
+/* Fazendo a responsividade para tablet e celular */
+/* Media queries*/
+
+@media(max-width: 1024px){
+    .inta{
+        width: 90%;
+    }
+}
+
+@media (max-width: 650px){
+    
+    
+    .insta{
+        display: flex;
+        width: 90%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .insta-phone{
+        display: none;
+    }
+
+    .insta-contlog{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
